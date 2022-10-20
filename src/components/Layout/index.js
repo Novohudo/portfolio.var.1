@@ -1,12 +1,11 @@
 import React from 'react'
 import './index.scss'
+import Sidebar from '../Sidebar'
 
-const Index = () => {
-  return (
-    <div>
-      Layout
-    </div>
-  )
+const Layout = () => {
+
+  return  <Sidebar/>
+
 }
 
-export default Index
+export default Layout
