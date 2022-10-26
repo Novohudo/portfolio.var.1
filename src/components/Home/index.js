@@ -3,6 +3,7 @@ import LogoTitle from '../../assets/images/logo-s.svg'
 import { Link } from 'react-router-dom'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
+import Animation from '../particles'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -10,13 +11,14 @@ const Home = () => {
   const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
   useEffect(() => {
-    return setTimeout(() => {
+     setTimeout(() => {
         setLetterClass('text-animate-hover')
     },4000)
   }, [])
 
   return (
     <div className={'container home-page'}>
+      <Animation/>
       <div className={'text-zone'}>
         <h1>
           <span className={letterClass}>H</span>
