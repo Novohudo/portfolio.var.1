@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
+import './About.scss'
+import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faGitAlt, faGitkraken, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
@@ -25,16 +25,9 @@ const About = () => {
             idx={15}
           />
         </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae dolorum et expedita, nulla unde
-          voluptatem! Cupiditate ducimus fugit optio. Aperiam commodi, dolorem et incidunt nisi quibusdam quis tenetur
-          voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores cupiditate distinctio error eum,
-          excepturi labore laboriosam laudantium mollitia officia optio qui, recusandae, sapiente soluta sunt suscipit
-          tempora velit voluptatum?</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, molestias, sint! Corporis dolor ducimus et
-          facilis fugit ipsa, itaque molestias nemo obcaecati officiis pariatur quo reiciendis sed sit vitae! Eos!
-        </p>
+        <p>Hej :) i am a beginner frontend-developer,my journey in the wondrous world of interface development is just beginning..</p>
+        <p>However i am already familiar with the technologies and some development techniques,have written several applications with JavaScript & React/Redux/Sass </p>
+        <p>I love learning new technologies and learning new ways of working  and creating ))</p>
       </div>
 
       <div className={'stage-cube-cont'}>
