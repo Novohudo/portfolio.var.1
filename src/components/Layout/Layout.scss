@@ -39,6 +39,7 @@
 }
 
 .about-page ,
+.apps-page,
   .contact-page {
     .text-zone {
       position: absolute;
@@ -113,4 +114,23 @@
         color: white;
       }
     }
+  .links-list{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    padding-top: 18%;
+    padding-left: 50%;
+
+   li {
+     padding-left: 50px;
+   }
+    svg{
+      height: 70px;
+      &:hover{
+        color: #ffd700;
+        transition-duration: 1s;
+      }
+    }
+  }
   }
