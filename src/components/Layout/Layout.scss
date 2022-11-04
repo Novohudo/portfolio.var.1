@@ -1,3 +1,5 @@
+
+
 .page {
   width: 100%;
   height: 100%;
@@ -38,83 +40,84 @@
   animation-delay: 1s;
 }
 
-.about-page ,
+.about-page,
 .apps-page,
-  .contact-page {
-    .text-zone {
-      position: absolute;
-      left: 10%;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 35%;
-      vertical-align: middle;
-      display: table-cell;
-      max-height: 90%;
+.contact-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
 
-      h1 {
-        font-size: 53px;
-        font-family: 'Coolvetica';
-        color: #ffd700;
-        font-weight: 400;
-        margin-top: 0;
-        position: relative;
-        margin-bottom: 40px;
-        left: 10px;
-        cursor: pointer;
+    h1 {
+      font-size: 53px;
+      font-family: 'Coolvetica';
+      color: #ffd700;
+      font-weight: 400;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 40px;
+      left: 10px;
+      cursor: pointer;
 
-        &::before {
-          content: '<h1>';
-          font-family: "La Belle Aurore";
-          font-size: 18px;
-          position: absolute;
-          margin-top: -10px;
-          left: -10px;
-          opacity: 0.6;
-          line-height: 18px;
-        }
-
-        &::after {
-          content: '<h1/>';
-          font-family: "La Belle Aurore";
-          font-size: 18px;
-          position: absolute;
-          left: -30px;
-          bottom: -20px;
-          margin-left: 20px;
-          opacity: 0.6;
-        }
+      &::before {
+        content: '<h1>';
+        font-family: "La Belle Aurore";
+        font-size: 18px;
+        position: absolute;
+        margin-top: -10px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
       }
 
-      p {
-        font-size: 15px;
-        font-style: italic;
-        color: #ffffff;
-        font-family: sans-serif;
-        font-weight: 400;
-        min-width: fit-content;
-        animation: pulse 1s;
-        letter-spacing: 1.5px;
-
-        &:nth-of-type(1) {
-          animation-delay: 1.1s;
-        }
-
-        &:nth-of-type(2) {
-          animation-delay: 1.2s;
-        }
-
-        &:nth-of-type(3) {
-          animation-delay: 1.3s;
-        }
+      &::after {
+        content: '<h1/>';
+        font-family: "La Belle Aurore";
+        font-size: 18px;
+        position: absolute;
+        left: -30px;
+        bottom: -20px;
+        margin-left: 20px;
+        opacity: 0.6;
       }
     }
 
-    .text-animate-hover {
-      &:hover {
-        color: white;
+    p {
+      font-size: 15px;
+      font-style: italic;
+      color: #ffffff;
+      font-family: sans-serif;
+      font-weight: 400;
+      min-width: fit-content;
+      animation: pulse 1s;
+      letter-spacing: 1.5px;
+
+      &:nth-of-type(1) {
+        animation-delay: 1.1s;
+      }
+
+      &:nth-of-type(2) {
+        animation-delay: 1.2s;
+      }
+
+      &:nth-of-type(3) {
+        animation-delay: 1.3s;
       }
     }
-  .links-list{
+  }
+
+  .text-animate-hover {
+    &:hover {
+      color: white;
+    }
+  }
+
+  .links-list {
     display: flex;
     list-style: none;
     height: 100%;
@@ -122,15 +125,17 @@
     padding-top: 18%;
     padding-left: 50%;
 
-   li {
-     padding-left: 50px;
-   }
-    svg{
+    li {
+      padding-left: 50px;
+    }
+
+    svg {
       height: 70px;
-      &:hover{
+
+      &:hover {
         color: #ffd700;
         transition-duration: 1s;
       }
     }
   }
-  }
+}

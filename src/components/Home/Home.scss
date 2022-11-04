@@ -1,5 +1,11 @@
+@import '../../App.scss';
+
 .home-page{
   .text-zone{
+    @include media(mobile){
+      left: 33%;
+      width: 45%;
+    }
     position: absolute;
     left: 10%;
     top:50%;
@@ -8,6 +14,9 @@
     max-height: 90%;
   }
   h1{
+    @include media(mobile){
+      font-size: 25px;
+    }
     font-style: italic;
     color: #fff;
     font-size: 53px;
@@ -37,6 +46,11 @@
       opacity: 0.6;
     }
     img{
+      @include media(mobile){
+        height: 30px;
+        width: 30px;
+        margin-right: 0.01rem;
+      }
       height: 62px;
       width: 62px;
       margin-left: 10px;
@@ -47,6 +61,10 @@
     }
   }
   h2{
+    @include media(mobile){
+      letter-spacing: 1px;
+      margin-top: 20px;
+    }
     color: #b9b9b9;
     margin-top: 20px;
     font-weight: 400;
@@ -56,6 +74,9 @@
     animation: fadeIn 1s 1.8s backwards;
   }
   .flat-button{
+    @include media(mobile){
+
+    }
     color: #ffd700;
     font-size: 13px;
     font-weight: 400;
