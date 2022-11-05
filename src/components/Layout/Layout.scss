@@ -8,7 +8,7 @@
 
 .top-tags {
   @include media(mobile) {
-    top: 85px;
+    top: 65px;
   }
   bottom: auto;
   top: 35px;
@@ -135,6 +135,14 @@
   }
 
   .links-list {
+    @include media(mobile){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 30%;
+      margin-top: 55%;
+    }
+    position: absolute;
     display: flex;
     list-style: none;
     height: 100%;
@@ -143,10 +151,17 @@
     padding-left: 50%;
 
     li {
+      @include media(mobile){
+        margin-left: -73px;
+        padding-top: 10px;
+      }
       padding-left: 50px;
     }
 
     svg {
+      @include media(mobile){
+        height: 50px;
+      }
       height: 70px;
 
       &:hover {

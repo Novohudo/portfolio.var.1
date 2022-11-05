@@ -29,7 +29,7 @@ const MyApps = () => {
       <ul className={'links-list'}>
         <li>
           <a href={'https://novohudo.github.io/posts'} target={'_blank'} rel={'noreferrer'}><FontAwesomeIcon
-            icon={faUserFriends} color={'#4d4d4e'} /> </a>
+            icon={faUserFriends} color={'#4d4d4e'} /></a>
         </li>
         <li>
           <a href={'https://novohudo.github.io/posts'} target={'_blank'} rel={'noreferrer'}> <FontAwesomeIcon
