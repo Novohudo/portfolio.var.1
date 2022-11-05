@@ -3,8 +3,8 @@
 .home-page{
   .text-zone{
     @include media(mobile){
-      left: 33%;
-      width: 45%;
+      left: 30%;
+      width: 47%;
     }
     position: absolute;
     left: 10%;
@@ -25,6 +25,9 @@
     cursor: pointer;
 
     &::before{
+      @include media(mobile) {
+        margin-top:-35px ;
+      }
       content: '<h1>';
       font-family: 'La Belle Aurore';
       color:#ffd700;
@@ -35,6 +38,10 @@
       opacity:0.6;
     }
     &::after{
+      @include media(mobile) {
+        margin-left: -160px;
+        margin-top: 45px;
+      }
       content: '</h1>';
       font-family: 'La Belle Aurore';
       color:#ffd700;
@@ -63,7 +70,7 @@
   h2{
     @include media(mobile){
       letter-spacing: 1px;
-      margin-top: 20px;
+      margin-top: 45px;
     }
     color: #b9b9b9;
     margin-top: 20px;

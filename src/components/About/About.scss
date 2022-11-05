@@ -1,4 +1,12 @@
+@import '../../App.scss';
+
 .stage-cube-cont {
+  @include media(mobile){
+    width: 90%;
+    height: 100%;
+    top: 400px;
+    overflow: initial;
+  }
   width: 50%;
   height: 100%;
   top: 0;
@@ -7,9 +15,13 @@
   position: absolute;
   right: 0;
   overflow: hidden;
+
 }
 
 .cubespinner {
+  @include media(mobile){
+    animation-duration: 20s;
+  }
   animation-name: spincube;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -19,6 +31,14 @@
   margin-left: calc(50% - 100px);
 
   div {
+    @include media(mobile){
+      width: 50px;
+      height: 50px;
+      left: 100px;
+      svg{
+        width: 40px;
+      }
+    }
     position: absolute;
     width: 200px;
     height: 200px;
@@ -34,7 +54,6 @@
   .face1 {
     transform: translateZ(100px);
   }
-
   .face2 {
     transform: rotateY(90deg) translateZ(100px);
   }
