@@ -152,6 +152,9 @@
     }
 
     a {
+      @include media(mobile) {
+        margin: 0 auto;
+      }
       margin-left: 50px;
       padding-top: 20px;
     }
