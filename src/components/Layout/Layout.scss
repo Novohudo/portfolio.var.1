@@ -49,11 +49,11 @@
 .contact-page {
 
   .text-zone {
-    @include media(mobile){
-      left: 20%;
+    @include media(mobile) {
+      left: 16%;
       width: 70%;
       height: 100%;
-      margin-top: 40px;
+      margin-top: 70px;
     }
     position: absolute;
     left: 10%;
@@ -65,8 +65,12 @@
     max-height: 90%;
 
     h1 {
-      @include media(mobile){
+      @include media(mobile) {
         font-size: 40px;
+      }
+      @include media(tablet) {
+        font-size: 40px;
+        margin-top: -40px;
       }
       font-size: 53px;
       font-family: 'Coolvetica';
@@ -102,7 +106,7 @@
     }
 
     p {
-      @include media(mobile){
+      @include media(mobile) {
         letter-spacing: 1px;
       }
       font-size: 15px;
@@ -126,6 +130,40 @@
         animation-delay: 1.3s;
       }
     }
+
+  }
+
+  .links-row {
+    display: inline-flex;
+    margin-left: 50%;
+    margin-top: 18%;
+    @include media(laptop){
+      margin-top:280px;
+    }
+    @include media(tablet) {
+      position: absolute;
+      margin-left: 32%;
+      margin-top: 48%;
+    }
+    @include media(mobile) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50%;
+    }
+
+    a {
+      margin-left: 50px;
+      padding-top: 20px;
+    }
+
+    svg {
+      height: 70px;
+
+      &:hover {
+        color: $primary-color;
+        transition-duration: 1s;
+      }
+    }
   }
 
   .text-animate-hover {
@@ -133,41 +171,9 @@
       color: white;
     }
   }
-
-  .links-list {
-    @include media(mobile){
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 30%;
-      margin-top: 55%;
-    }
-    position: absolute;
-    display: flex;
-    list-style: none;
-    height: 100%;
-    width: 100%;
-    padding-top: 18%;
-    padding-left: 50%;
-
-    li {
-      @include media(mobile){
-        margin-left: -73px;
-        padding-top: 10px;
-      }
-      padding-left: 50px;
-    }
-
-    svg {
-      @include media(mobile){
-        height: 50px;
-      }
-      height: 70px;
-
-      &:hover {
-        color: #ffd700;
-        transition-duration: 1s;
-      }
-    }
-  }
 }
+
+
+
+
+

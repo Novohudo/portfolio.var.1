@@ -26,24 +26,18 @@ const MyApps = () => {
             idx={15}/>
         </h1>
       </div>
-      <ul className={'links-list'}>
-        <li>
+      <div className={'links-list'}>
+        <div className={'links-row'}>
           <a href={'https://novohudo.github.io/posts'} target={'_blank'} rel={'noreferrer'}><FontAwesomeIcon
             icon={faUserFriends} color={'#4d4d4e'} /></a>
-        </li>
-        <li>
           <a href={'https://novohudo.github.io/posts'} target={'_blank'} rel={'noreferrer'}> <FontAwesomeIcon
             icon={faListCheck} color={'#4d4d4e'} /></a>
-        </li>
-        <li>
           <a href={'https://novohudo.github.io/posts'} target={'_blank'} rel={'noreferrer'}><FontAwesomeIcon
             icon={faArrowsToDot} color={'#4d4d4e'} /></a>
-        </li>
-        <li>
           <a href={'https://novohudo.github.io/posts'} target={'_blank'} rel={'noreferrer'}><FontAwesomeIcon
             icon={faArrowsToDot} color={'#4d4d4e'} /></a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
 
   <Loader type={'pacman'}/>

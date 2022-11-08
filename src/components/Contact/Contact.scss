@@ -10,8 +10,6 @@
 
 
     li {
-      padding: 0;
-      margin: 0;
       list-style: none;
       margin-bottom: 10px;
       overflow: hidden;
@@ -82,6 +80,11 @@
 .leaflet-container{
   @include media(mobile){
     display: none;
+  }
+  @include media(tablet){
+    width: 50%;
+    margin-left: 48%;
+    top: 20px;
   }
   position: relative;
   width: 100%;
