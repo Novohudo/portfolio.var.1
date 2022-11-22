@@ -35,9 +35,10 @@
   nav{
     @include media(mobile){
       display: flex;
-      justify-content: center;
+      justify-content: left;
       align-items: center;
       margin-top: -105px;
+      margin-left: 10px;
     }
     display: block;
     text-align: center;
@@ -51,7 +52,7 @@
         font-size: 25px;
         height: 25px;
         line-height: 10px;
-        margin-left: 15px;
+        padding-left: 45px;
       }
 
       font-size: 22px;

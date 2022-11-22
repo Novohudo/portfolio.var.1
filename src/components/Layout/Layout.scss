@@ -134,9 +134,21 @@
   }
 
   .links-row {
+    p{
+      @include media(mobile) {
+       font-style: normal;
+        font-size: 10px;
+        font-weight: bold;
+      }
+     color:white;
+      font-size: 15px;
+      font-family: Arial;
+      font-weight: bold;
+      font-style: oblique;
+    }
     display: inline-flex;
     margin-left: 50%;
-    margin-top: 18%;
+    margin-top: 15%;
     @include media(laptop){
       margin-top:280px;
     }
@@ -147,23 +159,39 @@
     }
     @include media(mobile) {
       display: flex;
-      flex-direction: column;
-      margin-top: 50%;
+      flex-direction: row;
+      margin-top: 60%;
+      margin-left: -1px;
     }
 
     a {
       @include media(mobile) {
-        margin: 0 auto;
+        padding: 5px;
+        width: 100px;
       }
+      &:hover{
+        box-shadow: 0 0 30px gold;
+        background: #115173;
+      }
+      border: 2px solid gold;
+      border-radius: 15px;
+      backdrop-filter: blur(10.5px);
+      width: 200px;
+      padding: 25px;
+      text-decoration: none;
       margin-left: 50px;
-      padding-top: 20px;
+      transition-duration: 1s;
     }
 
     svg {
+      @include media(mobile) {
+        height:50px;
+      }
       height: 70px;
+      color: gold;
 
       &:hover {
-        color: $primary-color;
+        color:white;
         transition-duration: 1s;
       }
     }
