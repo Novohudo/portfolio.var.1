@@ -5,12 +5,8 @@ $primary-color:#ffd700;
 $primary-color: #ffd700;
 $laptop: 1280px;
 $tablet: 810px;
-$mobile: 375px;
+$mobile: 500px;
 
-
-@mixin border {
-  border: 1px solid red;
-}
 @mixin media($media) {
   @if $media == mobile {
     @media only screen and (max-width: $mobile) {
