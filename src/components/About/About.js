@@ -25,9 +25,13 @@ const About = () => {
             idx={15}
           />
         </h1>
-        <p>Hej :) i am a beginner frontend-developer,my journey in the wondrous world of interface development is just beginning..</p>
-        <p>However i am already familiar with the technologies and some development techniques,have written several applications with JavaScript & React/Redux/Sass </p>
-        <p>I love learning new technologies and learning new ways of working  and creating ))</p>
+        <p>Hello, my name is Alexey, I'm 30 years old, I was born in the city of Kyiv, from a very young age I was drawn to computer topics, and especially to the console, I think the 'Matrix' film is to blame)
+          And now, after a years and a lot of tedious work, I finally came to the conclusion that it's time to do real business)
+          The direction is chosen and forward to React and Js)
+          A year of pain and suffering in independent study of React gave me the opportunity to understand the general direction and methods of solving the tasks, the only thing missing is real business with guys who know a lot about good code)
+          I understand,i am a beginner frontend-developer,my journey in the wondrous world of interface development is just beginning..
+          However i am already familiar with the technologies and some development techniques,have written several applications with JavaScript & React/Redux/Sass
+          I like learning new technologies and learning new ways of working and creating ))</p>
       </div>
 
       <div className={'stage-cube-cont'}>
