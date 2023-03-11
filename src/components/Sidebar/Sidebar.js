@@ -10,10 +10,7 @@ import { faFacebook, faGithub, faLinkedinIn, faReact, faSkype, faYoutube } from 
 const Sidebar = () => {
   return (
     <div className={'nav-bar'}>
-      <Link className={'logo'} to='/'>
-        <img src={LogoS} alt={'logo'}/>
-          <img className={"sub-logo"} src={LogoSubtitle} alt={'logo'}/>
-      </Link>
+
 
       <nav>
         <NavLink  activeclassname={"active"} to={'/'}>
