@@ -110,7 +110,7 @@ const Contact = () => {
 					</MapContainer>
 				</div>
 			</div>
-			<Loader type={'pacman'}/>
+			<Loader type={'semi-circle-spin'}/>
 		</>
 	)
 }

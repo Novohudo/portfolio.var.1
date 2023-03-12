@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import LogoTitle from '../../assets/images/logo-s.svg'
 import { Link } from 'react-router-dom'
 import './Home.scss'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
-import Loader from 'react-loaders'
+import Loader from 'react-loaders';
+import Aleks from '../../assets/images/logopreload.jpg'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['l', 'e', 'k', 's', 'e', 'y']
+  const nameArray = ['A','l', 'e', 'k', 's', 'e', 'y']
   const jobArray = ['w', 'e', 'b', ' ', 'd', 'e','v','e','l','o','p','e','r', '.']
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Home = () => {
           <br />
           <span className={`${letterClass}_13`}>I</span>
           <span className={`${letterClass}_14`}>'m</span>
-          <img src={LogoTitle} alt={'developer'} />
+          <br/>
           <AnimatedLetters
             lettersClass={letterClass}
             strArray={nameArray}
@@ -42,11 +42,11 @@ const Home = () => {
         <h2>Frontend Developer / Junior / Good Man :)</h2>
         <Link to={'/contact'} className={'flat-button'}>CONTACT ME</Link>
       </div>
-
+      <img className={'aleks-head'} src={Aleks}/>
     </div>
-      <Loader type={"pacman"}/>
+      <Loader type={"semi-circle-spin"}/>
     </>
   )
 }
 
-export default Home
+export default Home;
