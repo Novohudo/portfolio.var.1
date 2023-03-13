@@ -1,9 +1,9 @@
 import './Contact.scss'
 import React, {useEffect, useRef, useState} from 'react'
-import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import emailjs from '@emailjs/browser'
 import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
+import Loader from '../../loader'
 
 const Contact = () => {
 	const [letterClass, setLetterClass] = useState('text-animate')
@@ -110,7 +110,7 @@ const Contact = () => {
 					</MapContainer>
 				</div>
 			</div>
-			<Loader type={'semi-circle-spin'}/>
+			<Loader/>
 		</>
 	)
 }

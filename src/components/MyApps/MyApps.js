@@ -3,7 +3,9 @@ import './MyApps.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowsToDot, faListCheck, faUserFriends } from '@fortawesome/free-solid-svg-icons'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
-import Loader from 'react-loaders'
+import { Audio } from 'react-loader-spinner'
+import Loader from '../../loader'
+
 
 const MyApps = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -30,7 +32,8 @@ const MyApps = () => {
           <div className={'links-row'}>
             <a href={'https://novohudo.github.io/Social-Network/'} target={'_blank'} rel={'noreferrer'}><FontAwesomeIcon
               icon={faUserFriends} color={'#4d4d4e'} /><p>"Social-Network"- with:
-              React-Redux<br/>React-Router<br/>Redux-Form<br/>Redux-Thunk<br/>Sass<br />My first steps and practice :)</p></a>
+              React-Redux<br />React-Router<br />Redux-Form<br />Redux-Thunk<br />Sass<br />My first steps and practice
+              :)</p></a>
             <a href={'https://novohudo.github.io/ToDo.colorfull/'} target={'_blank'} rel={'noreferrer'}>
               <FontAwesomeIcon
                 icon={faListCheck} color={'#4d4d4e'} /><p>"ToDo-list"- work on mistakes and improved code style..</p>
@@ -38,8 +41,7 @@ const MyApps = () => {
           </div>
         </div>
       </div>
-
-      <Loader type={'semi-circle-spin'} />
+      <Loader />
     </>
   )
 }

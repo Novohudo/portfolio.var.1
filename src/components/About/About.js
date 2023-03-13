@@ -3,7 +3,8 @@ import './About.scss'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faGitAlt, faGitkraken, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
+import Loader from '../../loader'
+
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -57,7 +58,7 @@ const About = () => {
         </div>
       </div>
     </div>
-    <Loader type={"semi-circle-spin"}/>
+      <Loader/>
     </>
   )
 }

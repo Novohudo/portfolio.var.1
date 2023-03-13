@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.scss'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
-import Loader from 'react-loaders';
 import Aleks from '../../assets/images/logopreload.jpg'
+import Loader from '../../loader'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -44,7 +44,7 @@ const Home = () => {
       </div>
       <img className={'aleks-head'} src={Aleks}/>
     </div>
-      <Loader type={"semi-circle-spin"}/>
+      <Loader/>
     </>
   )
 }
