@@ -25,18 +25,6 @@ const Sidebar = () => {
         </NavLink>
       </nav>
 
-      <ul>
-        <li>
-          <a target={'_blank'} rel={'noreferrer'} href={'https://www.facebook.com/alex.umrikhin.3/'}>
-            <FontAwesomeIcon icon={faFacebook} color={'#070000'} />
-          </a>
-        </li>
-        <li>
-          <a target={'_blank'} rel={'noreferrer'} href={'https://github.com/Novohudo'}>
-            <FontAwesomeIcon icon={faGithub} color={'#070000'} />
-          </a>
-        </li>
-      </ul>
     </div>
   )
 }

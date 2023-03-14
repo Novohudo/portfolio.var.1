@@ -57,4 +57,16 @@ h3{
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
 }
+.my-links{
+  position: absolute;
+  top: 50em;
+  width: 5em;
+  text-align: center;
+  box-shadow: 0 0 15px #000000;
+  background-color: rgba(0, 0, 0, 0.31);
+  padding: 5px;
+  svg{
+    height: 35px;
+  }
+}
 
