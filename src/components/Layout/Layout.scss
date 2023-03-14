@@ -49,6 +49,20 @@
       letter-spacing: 5px;
       margin: 0 auto;
     }
+    h2{
+      position: absolute;
+      width: 500px;
+      top: -5.3em;
+      left: 7em;
+      color: black;
+      font-family: Calibri,serif;
+      font-weight: lighter;
+      letter-spacing: 4px;
+      font-size: 50px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
 
     p {
       font-size: 15px;
@@ -77,59 +91,51 @@
   }
 
   .links-row {
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 7em;
+    left: 31em;
+    background-color: rgba(0, 0, 0, 0.38);
+    box-shadow: 0 0 15px black;
+    padding: 5px;
+    margin: 25px;
+    text-align: center;
+    border-radius: 15px;
     p{
-      @include media(mobile) {
-       font-style: normal;
-        font-size: 10px;
-        font-weight: bold;
-      }
-     color: #070000;
-      font-size: 15px;
-      font-family: Arial;
-      font-weight: bold;
-      font-style: oblique;
+     color: #feffff;
+      font-size: 11px;
+      font-weight: lighter;
+      font-family: Arial,serif;
+      letter-spacing: 8px;
     }
-    display: inline-flex;
-    margin-left: 50%;
-    margin-top: 15%;
-
 
     a {
-      @include media(mobile) {
-        padding: 5px;
-        width: 100px;
-      }
-      &:hover{
-        box-shadow: 0 0 30px gold;
-        background: #115173;
-      }
-      border: 2px solid gold;
       border-radius: 15px;
-      backdrop-filter: blur(10.5px);
-      width: 200px;
-      padding: 25px;
+      height: 16em;
+      width: 16em;
+      margin: 2em;
       text-decoration: none;
-      margin-left: 50px;
-      transition-duration: 1s;
-    }
-
-    svg {
-      @include media(mobile) {
-        height:50px;
-      }
-      height: 70px;
-      color: #feffff;
-
-      &:hover {
-        color: #feffff;
-        transition-duration: 1s;
+      background-color: rgba(0, 0, 0, 0.51);
+      transition-duration: 0.5s;
+      &:hover{
+        box-shadow: 0 0 30px #000000;
       }
     }
   }
+.app-icon{
+  text-align: center;
+  width: 10em;
+  padding-top: 1.5em;
+}
 
   .text-animate-hover {
     &:hover {
-      color: #070000;
+      color: #feffff;
     }
   }
 }

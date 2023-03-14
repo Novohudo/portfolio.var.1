@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import './MyApps.module.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowsToDot, faListCheck, faUserFriends } from '@fortawesome/free-solid-svg-icons'
-import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
-import { Audio } from 'react-loader-spinner'
+import radioApp from '../../assets/images/radioApp.svg'
+import chessApp from '../../assets/images/chessApp.svg'
+import todoApp from '../../assets/images/toDoApp.svg'
 import Loader from '../../loader'
 
 
@@ -20,26 +18,16 @@ const MyApps = () => {
   return (
     <>
       <div className={'container apps-page'}>
-        <div className={'text-zone'}>
-          <h1>
-            <AnimatedLetters
-              lettersClass={letterClass}
-              strArray={['M', 'y', ' ', 'p', 'r', 'a', 'c', 't', 'i', 'c', 'e', ' ', 'projects']}
-              idx={15} />
-          </h1>
+        <h3>MY PRACTICE PROJECTS</h3>
+        <div className={'links-row'}>
+          <a href={'https://novohudo.github.io/Radio-Gaga/'} target={'_blank'} rel={'noreferrer'}><img
+            className={'app-icon'} src={radioApp} /><p>RADIO</p></a>
+          <a href={'https://react-chess-v-1-qgg8b4cuf-novohudo.vercel.app/'} target={'_blank'} rel={'noreferrer'}><img
+            className={'app-icon'} src={chessApp} /><p>CHESS</p></a>
+          <a href={'https://novohudo.github.io/ToDo.colorfull/'} target={'_blank'} rel={'noreferrer'}><img
+            className={'app-icon'} src={todoApp} /><p>TODO_APP</p></a>
         </div>
-        <div className={'links-list'}>
-          <div className={'links-row'}>
-            <a href={'https://novohudo.github.io/Social-Network/'} target={'_blank'} rel={'noreferrer'}><FontAwesomeIcon
-              icon={faUserFriends} color={'#4d4d4e'} /><p>"Social-Network"- with:
-              React-Redux<br />React-Router<br />Redux-Form<br />Redux-Thunk<br />Sass<br />My first steps and practice
-              :)</p></a>
-            <a href={'https://novohudo.github.io/ToDo.colorfull/'} target={'_blank'} rel={'noreferrer'}>
-              <FontAwesomeIcon
-                icon={faListCheck} color={'#4d4d4e'} /><p>"ToDo-list"- work on mistakes and improved code style..</p>
-            </a>
-          </div>
-        </div>
+
       </div>
       <Loader />
     </>

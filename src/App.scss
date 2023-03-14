@@ -30,12 +30,20 @@ textarea {
   margin: 0 auto;
 }
 body{
-  //text-shadow: 5px 6px 6px rgb(254, 255, 255);
-  background-image: url("./assets/images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  text-shadow: 4px 5px 5px rgb(0, 0, 0);
+  background-color: lightyellow;
 }
-
+h3{
+  color: #fdfdfd;
+  font-weight: lighter;
+  font-family: Calibri,serif;
+  font-size: 30px;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 5em;
+  left: 18.5em;
+  z-index: 1;
+}
 .loader{
   display: block;
   position: absolute;
