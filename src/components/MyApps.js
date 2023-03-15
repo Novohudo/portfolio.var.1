@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import radioApp from '../../assets/images/radioApp.svg'
-import chessApp from '../../assets/images/chessApp.svg'
-import todoApp from '../../assets/images/toDoApp.svg'
-import Loader from '../../loader'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
-
+import radioApp from '../assets/images/radioApp.svg'
+import chessApp from '../assets/images/chessApp.svg'
+import todoApp from '../assets/images/toDoApp.svg'
+import Loader from '../loader'
 
 const MyApps = () => {
   const [letterClass, setLetterClass] = useState('text-animate')

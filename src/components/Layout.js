@@ -1,6 +1,5 @@
 import React from 'react'
-import './Layout.scss'
-import Sidebar from '../Sidebar/Sidebar'
+import Sidebar from './Sidebar'
 import { Outlet } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'

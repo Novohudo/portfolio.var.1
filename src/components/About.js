@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import './About.scss'
-import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
+import AnimatedLetters from './AnimatedLetters/AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faGitAlt, faGitkraken, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
-import Loader from '../../loader'
+import Loader from '../loader'
 
 
 const About = () => {

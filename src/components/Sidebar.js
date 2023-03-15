@@ -1,9 +1,9 @@
-import './Sidebar.scss'
+
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faGithub, faReact } from '@fortawesome/free-brands-svg-icons'
+import {faReact} from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
   return (
