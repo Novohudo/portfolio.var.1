@@ -1,7 +1,7 @@
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
 
-$mobile: 600px;
+$mobile: 500px;
 
 @mixin media($media) {
   @if $media == mobile {
@@ -10,7 +10,6 @@ $mobile: 600px;
     }
   }
 }
-
 input,
 textarea {
   font-family: 'Helvetica Neue', sans-serif;
@@ -88,7 +87,7 @@ h3 {
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
-  border: 1px solid red;
+
 }
 
 .about-page,
@@ -504,6 +503,7 @@ ul {
 .contact-form {
   height: 500px;
 
+
   ul {
     position: absolute;
     width: 47em;
@@ -511,6 +511,7 @@ ul {
     left: 0;
     padding: 5px;
     margin: 5px;
+
 
     li {
       list-style: none;
@@ -618,17 +619,26 @@ ul {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 .text-zone{
   top: -10em;
   height: 50%;
 }
+  nav{
+
+  a{
+    padding: 5px;
+    margin: 0 auto;
+  }
+  }
+
   .nav-bar{
-    width: 83%;
+    width:17em;
     margin: 5px;
     top: 0;
-    left: 4em;
+    left: 12em;
   }
+
   .home-page{
     height: 70%;
     width: 80%;
@@ -662,12 +672,3 @@ ul {
     display: none;
   }
 }
-
-
-
-
-
-
-
-
-
