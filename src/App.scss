@@ -274,7 +274,7 @@ h3 {
   box-shadow: 0 0 15px #000000;
   position: relative;
   top: 25px;
-  left: 13em;
+  left:8em;
   color: #070000;
   background-color: rgba(0, 0, 0, 0.32);
   letter-spacing: 4px;
@@ -515,17 +515,26 @@ ul {
 
 
 .contact-form {
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 15px black;
+  position: relative;
+  top: 0;
+  left: 25em;
 
-
+  h1,p{
+    margin: 5px;
+    font-family: Bahnschrift,serif;
+  }
   ul {
-    position: absolute;
-    width: 47em;
-    top: 15em;
+    position: relative;
+    width: 40em;
+    top: 5em;
     left: 0;
     padding: 5px;
     margin: 5px;
-
 
     li {
       list-style: none;
@@ -586,10 +595,10 @@ ul {
 
 .map-wrap {
   position: relative;
-  top: 10%;
-  left: 47%;
-  width: 43%;
-  height: 88%;
+  top: 5em;
+  left: 28em;
+  width: 35%;
+  height: 91%;
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 15px black;
   border-radius: 5px;
@@ -634,6 +643,19 @@ ul {
 }
 
 @media screen and (max-width: 500px) {
+  .contact-form{
+    position: absolute;
+    top: 3em;
+    left: 1em;
+    width: 95vw;
+    height: 98vh;
+    ul{
+      width: 88vw;
+    }
+  }
+  .map-wrap{
+    display: none;
+  }
   .about-text{
    margin-top: 7em;
     width: 90%;

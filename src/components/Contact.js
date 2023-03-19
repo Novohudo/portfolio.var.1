@@ -37,18 +37,18 @@ const Contact = () => {
 	return (
 		<>
 			<div className={'container contact-page'}>
-				<div className={'text-zone'}>
-					<h1>
-						<AnimatedLetters
-							lettersClass={letterClass}
-							strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-							idx={15}/>
-					</h1>
-					<p>
-						If you have any requests or
-						questions, don't hesitate to contact me using below form either.
-					</p>
+
 					<div className={'contact-form'}>
+						<h1>
+							<AnimatedLetters
+								lettersClass={letterClass}
+								strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+								idx={15}/>
+						</h1>
+						<p>
+							If you have any requests or
+							questions, don't hesitate to contact me using below form either.
+						</p>
 						<form ref={refForm} onSubmit={sendEmail}>
 							<ul>
 								<li className={'half'}>
@@ -92,7 +92,7 @@ const Contact = () => {
 							</ul>
 						</form>
 					</div>
-				</div>
+
 				<div className={"info-map"}>
 					Aleksey Umrikhin,
 					<br/>
