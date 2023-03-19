@@ -17,8 +17,6 @@ textarea {
 }
 
 body {
-  height: 100vh;
-  text-shadow: 4px 5px 5px rgb(0, 0, 0);
   background-color: lightyellow;
 }
 
@@ -90,7 +88,22 @@ h3 {
   animation-delay: 1s;
 
 }
-
+.about-text{
+  font-family: Bahnschrift,serif;
+  box-shadow: 0 0 15px #000000;
+  background-color: rgba(0, 0, 0, 0.31);
+  padding: 25px;
+  margin: 5px;
+  h1{
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .about-page,
 .apps-page,
 .contact-page {
@@ -621,12 +634,21 @@ ul {
 }
 
 @media screen and (max-width: 500px) {
-
+  .about-text{
+   margin-top: 7em;
+    width: 90%;
+    font-size: 15px;
+    h1{
+      font-size: 15px;
+      margin: 0 auto;
+    }
+  }
+  .stage-cube-cont {
+    display: none;
+  }
   .text-zone{
   top: -10em;
   height: 50%;
-
-
   h1{
     font-size: 32px;
     margin: 0;
@@ -648,7 +670,7 @@ ul {
     width:17em;
     margin: 5px;
     top: 3em;
-    left: 10em;
+    left: 9em;
   }
 
   .home-page{
@@ -669,8 +691,11 @@ ul {
     margin: 0 auto;
   }
   .my-links{
-    z-index: 1;
-    left: -1em;
+    svg {
+      padding: 5px;
+      height: 25px;
+    }
+    top: 1em;
     background: none;
     box-shadow: none;
   }

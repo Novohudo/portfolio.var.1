@@ -17,7 +17,7 @@ const About = () => {
   return (
     <>
     <div className={'container about-page'}>
-      <div className={'text-zone'}>
+      <div className={'about-text'}>
         <h1>
           <AnimatedLetters
             lettersClass={letterClass}
