@@ -183,8 +183,6 @@ h3 {
     align-items: center;
     flex-wrap: wrap;
     margin-top:7em;
-    background-color: rgba(0, 0, 0, 0.38);
-    box-shadow: 0 0 15px black;
     padding: 5px;
     text-align: center;
     border-radius: 15px;
@@ -690,7 +688,7 @@ ul {
     width:17em;
     margin: 5px;
     top: 3em;
-    left: 9em;
+    left: 10em;
   }
 
   .home-page{
@@ -730,7 +728,5 @@ ul {
   .info-map {
     display: none;
   }
-.links-row{
-  margin: 5px;
-}
+
 }
