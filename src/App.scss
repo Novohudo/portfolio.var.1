@@ -17,6 +17,7 @@ textarea {
 }
 
 body {
+  height: 100vh;
   text-shadow: 4px 5px 5px rgb(0, 0, 0);
   background-color: lightyellow;
 }
@@ -623,6 +624,12 @@ ul {
 .text-zone{
   top: -10em;
   height: 50%;
+  h1{
+    font-size: 35px;
+    margin: 0 ;
+    padding-left: 2em;
+  }
+
 }
   nav{
 
