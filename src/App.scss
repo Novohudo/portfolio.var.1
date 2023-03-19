@@ -621,12 +621,15 @@ ul {
 }
 
 @media screen and (max-width: 500px) {
-.text-zone{
+
+  .text-zone{
   top: -10em;
   height: 50%;
+
+
   h1{
-    font-size: 35px;
-    margin: 0 ;
+    font-size: 32px;
+    margin: 0;
     padding-left: 2em;
   }
 
@@ -638,19 +641,21 @@ ul {
     margin: 0 auto;
   }
   }
-
+.flat-button{
+  margin-left: 5em;
+}
   .nav-bar{
     width:17em;
     margin: 5px;
     top: 0;
-    left: 12em;
+    left: 10em;
   }
 
   .home-page{
     height: 70%;
     width: 80%;
-    top: 37em;
-    left: 6rem;
+    top: 34em;
+    left: 4.5rem;
     margin: 0 auto;
     z-index: 2;
   }
@@ -665,7 +670,9 @@ ul {
   }
   .my-links{
     z-index: 1;
-    margin: 5px;
+    left: -1em;
+    background: none;
+    box-shadow: none;
   }
 
   .map-wrap {
